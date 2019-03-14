@@ -21,8 +21,7 @@ By Leveraging MapR to collect all data and run continuous models, when can then 
 
 
 # Architecture 
-![Data Pipeline Process][logo]
-[logo] https://github.com/auddye/connected-driver-cluster/blob/working/ConnectedDriverArchitecture.png
+![Data Pipeline Process](https://github.com/auddye/connected-driver-cluster/blob/working/ConnectedDriverArchitecture.png)
 
 # Setup
 
