@@ -11,8 +11,8 @@ By Leveraging MapR to collect all data and run continuous models, when can then 
 # Connect Driver Demonstration Components
 
 1) Dataset: Includes trips from ? number of vehicles taking X number of trips 
-2) Java Producer: produces messages to a mapr stream   
-3) Java Consumer: consumes and transforms dataset 
+2) Java Producer:"Ingestor" produces messages to a mapr stream   
+3) Java Consumer:"Transformer" consumes and transforms dataset 
 4) MapR Data Platform 6.1 
 5) MapR Data Science Refinery (Zeppelin Notebook) 
 6) Google Firebase
@@ -137,22 +137,6 @@ XCode: window -> devices and simulators > components > simulator > iOS 12.0 Simu
 
 From the Edge Node, or from wherever you compiled your jar packages to run
 
-**Start Ingesting and Transforming the Data**
-
-Run the ingestor
-```
-/opt/mapr/spark/spark-2.3.1/bin/spark-submit --master yarn --deploy-mode client /mapr/my.cluster.com/user/mapr/connected-driver-cluster/consumers/ingestor/target/connected-driver-ingestor-2.0-SNAPSHOT.jar -n "/mapr/my.cluster.com/obd/obd_msg_stream:obd_msg" -t "/mapr/my.cluster.com/obd/obd_raw_table"
-```
-
-Run the transformer
-```
-/opt/mapr/spark/spark-2.3.1/bin/spark-submit --master yarn --deploy-mode client --num-executors 3 --executor-memory 1g  /mapr/my.cluster.com/user/mapr/connected-driver-cluster/consumers/connected-driver-transformer-2.0-SNAPSHOT.jar -h /obd/obd_checkpoints -n /obd/obd_msg_stream:obd_msg -r /obd/obd_transformed -o "2019-01-28 0:55:08"
-```
-
-Navigate to the MapR Cluster 
-
-
-
 **Establish MapR to Firebase Connection**
 -t is the transformed data table we will be using to populate our firebase database. This is a complete path to the table. 
 -f The link to your database 
@@ -165,3 +149,25 @@ Navigate to the MapR Cluster
 java -jar /mapr/my.cluster.com/user/mapr/connected-driver-cluster/firebase/target/connected-driver-firebase-2.0-SNAPSHOT.jar -t /mapr/my.cluster.com/obd/obd_transformed -f https://connected-driver-69921.firebaseio.com -d 200 -m /obd/obd_messages
 
 ```
+
+
+**Start Ingesting and Transforming the Data**
+
+Run the ingestor
+```
+/opt/mapr/spark/spark-2.3.1/bin/spark-submit --master yarn --deploy-mode client /mapr/my.cluster.com/user/mapr/connected-driver-cluster/consumers/ingestor/target/connected-driver-ingestor-2.0-SNAPSHOT.jar -n "/mapr/my.cluster.com/obd/obd_msg_stream:obd_msg" -t "/mapr/my.cluster.com/obd/obd_raw_table"
+```
+
+Run the transformer
+```
+/opt/mapr/spark/spark-2.3.1/bin/spark-submit --master yarn --deploy-mode client --num-executors 3 --executor-memory 1g  /mapr/my.cluster.com/user/mapr/connected-driver-cluster/consumers/connected-driver-transformer-2.0-SNAPSHOT.jar -h /obd/obd_checkpoints -n /obd/obd_msg_stream:obd_msg -r /obd/obd_transformed -o "2019-01-28 0:55:08"
+```
+
+Navigate to the MapR Cluster MCS 
+
+https://maprcluster.com:8443 
+
+View the volumes and tables for and notice the volume size change as the data is streamed into the platform. 
+
+
+
