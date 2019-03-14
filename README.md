@@ -76,9 +76,9 @@ Log into Google Cloud
 
 https://firebase.google.com/products/
 
-Click **Get Started** 
-Click **Add Project**
-Development Panel > Database > **Create database** 
+>Click **Get Started** 
+>Click **Add Project**
+>Development Panel > Database > **Create database** 
 Create "Realtime Database" 
 Select **"Start in test mode"**
 Click **Enable**
