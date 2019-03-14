@@ -110,4 +110,17 @@ expo start
 Keep hitting enter to get through the defaults 
 When the Tunnel is ready hit “i” for iOS, this will launch the simulator 
 
+# Running the Demonstration 
 
+From the Edge Node, or from wherever you compiled your jar packages to run
+
+**Startup MapR to Firebase Connection**
+-t is the transformed data table we will be using to populate our firebase database. This is a complete path to the table. 
+-f The link to your database 
+
+![Firebase Link](https://github.com/auddye/connected-driver-cluster/blob/working/Firebaselink.png)
+
+
+```
+java -jar /home/mapr/jars/connected-car-mapr-to-firebase-2.0-SNAPSHOT.jar -t /mapr/61-demo/obd/obd_transformed -f https://connecteddriver-f6d01.firebaseio.com -d 200 -m /obd/obd_messages
+```
