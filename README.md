@@ -21,7 +21,7 @@ By Leveraging MapR to collect all data and run continuous models, when can then 
 
 
 # Architecture 
-![Data Pipeline Process](https://github.com/auddye/connected-driver-cluster/blob/working/ConnectedDriverArchitecture.png)
+![Data Pipeline Process](https://github.com/auddye/connected-driver-cluster/images/ConnectedDriverArchitecture.png)
 
 # Setup
 
@@ -127,7 +127,7 @@ expo start
 Keep hitting enter to get through the defaults 
 When the Tunnel is ready hit “i” for iOS, this will launch the simulator 
 
-![Tunnel launches](https://github.com/auddye/connected-driver-cluster/blob/working/tunnel.png)
+![Tunnel launches](https://github.com/auddye/connected-driver-cluster/images/tunnel.png)
 
 Make sure you are using the correct iOS version 
 XCode: window -> devices and simulators > components > simulator > iOS 12.0 Simulator 
@@ -158,7 +158,7 @@ Navigate to the MapR Cluster
 -f The link to your database 
 -d messages per milliseconds (example: 200 , means 1 message every 200 milliseconds) 
 
-![Firebase Link](https://github.com/auddye/connected-driver-cluster/blob/working/Firebaselink.png)
+![Firebase Link](https://github.com/auddye/connected-driver-cluster/images/Firebaselink.png)
 
 
 ```
