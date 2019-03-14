@@ -64,11 +64,50 @@ mvn pkg
 
 ** Google Firebase**
 
+Log into Google Cloud 
 
+https://firebase.google.com/products/
 
+Click **Get Started** 
+Click **Add Project**
+Development Panel > Database > **Create database** 
+Create "Realtime Database" 
+Select **"Start in test mode"**
+Click **Enable**
+Add a field **Name: car, Value: test**
 
+Navigate to "Your Apps" 
+Select **</>** for HTML
+You will see **"Add Firebase to your web app"**
+Copy this information and save it, it will be used in our Firebase.js code 
 
 
 **Mobile Application** 
+
+Your laptop will need the following installed: 
+
+Node.js : Download from here https://nodejs.org/en/download/
+```
+npm install -g expo-cli
+```
+
+
+On your personal computer or where you will be simulating the mobile application 
+```
+git clone https://github.com/mpojeda84/connected-car-mapr-to-firebase.git
+cd lib/
+vi Firebase.js > paste in credentials 
+```
+
+We are now ready to start up our mobile application 
+```
+cd firebase 
+mvn package 
+npm install
+expo start 
+```
+
+Keep hitting enter to get through the defaults 
+When the Tunnel is ready hit “i” for iOS, this will launch the simulator 
 
 
