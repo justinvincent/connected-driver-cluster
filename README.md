@@ -147,7 +147,7 @@ From the Edge Node, or from wherever you compiled your jar packages to run
 
 
 ```
-java -jar /mapr/my.cluster.com/user/mapr/connected-driver-cluster/firebase/target/connected-driver-firebase-2.0-SNAPSHOT.jar -t /mapr/my.cluster.com/obd/obd_transformed -f https://connected-driver-69921.firebaseio.com -d 200 -m /obd/obd_messages
+java -jar /mapr/my.cluster.com/user/mapr/connected-driver-cluster/firebase/target/connected-driver-firebase-2.0-SNAPSHOT.jar -t /mapr/my.cluster.com/obd/obd_transformed -f https://your-databasename.firebaseio.com -d 200 -m /obd/obd_messages
 
 ```
 
