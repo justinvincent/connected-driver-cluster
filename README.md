@@ -78,11 +78,12 @@ https://firebase.google.com/products/
 
 Click **Get Started**  
 Click **Add Project**  
-Development Panel > Database > **Create database**   
-Create "Realtime Database" 
-Select **"Start in test mode"**
-Click **Enable**
-Add a field **Name: car, Value: test**
+Name your project and click "Create project"  
+Development Panel > Database > **Create database**     
+Create "Realtime Database"   
+Select **"Start in test mode"**  
+Click **Enable**  
+Add a field **Name: car, Value: test**  
 
 Navigate to "Your Apps" 
 Select **</>** for HTML
