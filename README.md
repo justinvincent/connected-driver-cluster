@@ -70,7 +70,7 @@ cd ../transformer
 mvn clean package
 ```
 
-** Google Firebase**
+**Google Firebase**
 
 Log into Google Cloud 
 
@@ -85,8 +85,8 @@ Select **"Start in test mode"**
 Click **Enable**  
 Add a field **Name: car, Value: test**  
 
-Navigate to "Your Apps" 
-Select **</>** for HTML
+Navigate to the side panel and click on  "Project Overview"   
+Under "Get started by adding Firebase ot your app -> Select **</>** for HTML
 You will see **"Add Firebase to your web app"**
 Copy this information and save it, it will be used in our Firebase.js code 
 
@@ -154,15 +154,18 @@ java -jar /mapr/my.cluster.com/user/mapr/connected-driver-cluster/firebase/targe
 
 **Start Ingesting and Transforming the Data**
 
+Run the transformer
+```
+/opt/mapr/spark/spark-2.3.1/bin/spark-submit --master yarn --deploy-mode client --num-executors 3 --executor-memory 1g  /mapr/my.cluster.com/user/mapr/connected-driver-cluster/consumers/connected-driver-transformer-2.0-SNAPSHOT.jar -h /obd/obd_checkpoints -n /obd/obd_msg_stream:obd_msg -r /obd/obd_transformed -o "2019-01-28 0:55:08"
+```
+
+
 Run the ingestor
 ```
 /opt/mapr/spark/spark-2.3.1/bin/spark-submit --master yarn --deploy-mode client /mapr/my.cluster.com/user/mapr/connected-driver-cluster/consumers/ingestor/target/connected-driver-ingestor-2.0-SNAPSHOT.jar -n "/mapr/my.cluster.com/obd/obd_msg_stream:obd_msg" -t "/mapr/my.cluster.com/obd/obd_raw_table"
 ```
 
-Run the transformer
-```
-/opt/mapr/spark/spark-2.3.1/bin/spark-submit --master yarn --deploy-mode client --num-executors 3 --executor-memory 1g  /mapr/my.cluster.com/user/mapr/connected-driver-cluster/consumers/connected-driver-transformer-2.0-SNAPSHOT.jar -h /obd/obd_checkpoints -n /obd/obd_msg_stream:obd_msg -r /obd/obd_transformed -o "2019-01-28 0:55:08"
-```
+
 
 Navigate to the MapR Cluster MCS 
 
