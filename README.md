@@ -55,6 +55,13 @@ If you would like this script to delete the firebase database use a text editor 
 ./1-delete.sh
 ```
 
+**Data Files and Producer**
+
+```
+git clone https://github.com/mpojeda84/connected-driver-client.git
+```
+
+
 
 
 **Edge Node Programs **
@@ -165,6 +172,10 @@ Run the ingestor
 /opt/mapr/spark/spark-2.3.1/bin/spark-submit --master yarn --deploy-mode client /mapr/my.cluster.com/user/mapr/connected-driver-cluster/consumers/ingestor/target/connected-driver-ingestor-2.0-SNAPSHOT.jar -n "/mapr/my.cluster.com/obd/obd_msg_stream:obd_msg" -t "/mapr/my.cluster.com/obd/obd_raw_table"
 ```
 
+Now let's bring in the data
+```
+java -jar /home/mapr/jars/car-data-producer-2.0-SNAPSHOT.jar -t "/mapr/61-demo/obd/obd_msg_stream:obd_msg" -f "/home/mapr/data/" -d 5
+```  
 
 
 Navigate to the MapR Cluster MCS 
