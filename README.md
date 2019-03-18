@@ -150,7 +150,7 @@ When the Tunnel is ready hit “i” for iOS, this will launch the simulator
 ![Tunnel launches](https://github.com/auddye/connected-driver-cluster/blob/working/images/tunnel.png)
 
 Make sure you are using the correct iOS version 
-XCode: window -> devices and simulators > components > simulator > iOS 12.0 Simulator 
+XCode: window -> devices and simulators > components > simulator > iOS X Simulator 
 
 
 # Running the Demonstration 
@@ -171,24 +171,28 @@ java -jar /mapr/my.cluster.com/user/mapr/connected-driver-cluster/firebase/targe
 ```
 
 
-**Start Ingesting and Transforming the Data**
+**Start Ingester and Transformer**
 
-Run the transformer
+
+Run the ingestor first, this gets consumer ready and listening for incoming messages 
+```
+/opt/mapr/spark/spark-2.3.1/bin/spark-submit --master yarn --deploy-mode client /mapr/my.cluster.com/user/mapr/connected-driver-cluster/consumers/ingestor/target/connected-driver-ingestor-2.0-SNAPSHOT.jar -n "/mapr/my.cluster.com/obd/obd_msg_stream:obd_msg" -t "/mapr/my.cluster.com/obd/obd_raw_table"
+```
+
+
+Run the transformer. This can be done now, or if you are resource constraint bring in the data first, kill the ingestor, and then run the transformer. 
 ```
 /opt/mapr/spark/spark-2.3.1/bin/spark-submit --master yarn --deploy-mode client --num-executors 3 --executor-memory 1g  /mapr/my.cluster.com/user/mapr/connected-driver-cluster/consumers/connected-driver-transformer-2.0-SNAPSHOT.jar -h /obd/obd_checkpoints -n /obd/obd_msg_stream:obd_msg -r /obd/obd_transformed -o "2019-01-28 0:55:08"
 ```
 
-
-Run the ingestor
-```
-/opt/mapr/spark/spark-2.3.1/bin/spark-submit --master yarn --deploy-mode client /mapr/my.cluster.com/user/mapr/connected-driver-cluster/consumers/ingestor/target/connected-driver-ingestor-2.0-SNAPSHOT.jar -n "/mapr/my.cluster.com/obd/obd_msg_stream:obd_msg" -t "/mapr/my.cluster.com/obd/obd_raw_table"
-```
+**Produce and Publish Data**
 
 Now let's bring in the data
 ```
 java -jar /home/mapr/jars/car-data-producer-2.0-SNAPSHOT.jar -t "/mapr/61-demo/obd/obd_msg_stream:obd_msg" -f "/home/mapr/data/" -d 5
 ```  
 
+**View Activity**
 
 Navigate to the MapR Cluster MCS 
 
@@ -196,5 +200,7 @@ https://maprcluster.com:8443
 
 View the volumes and tables for and notice the volume size change as the data is streamed into the platform. 
 
+
+Navigate to your Moblie App on your desktop and view the data fields now updated 
 
 
