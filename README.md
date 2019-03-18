@@ -49,18 +49,25 @@ git clone https://github.com/mpojeda84/connected-driver-cluster.git
 ./3-create.sh
 ```
 
-If you need to clean up the cluster run the following script to start over: 
-If you would like this script to delete the firebase database use a text editor and paste in the link to your firebase database in the curl command
-```
-./1-delete.sh
-```
 
-**Data Files and Producer**
+**Data Files and Producer Edge Node**
 
 ```
 git clone https://github.com/mpojeda84/connected-driver-client.git
 ```
 
+
+Also on your laptop do a git clone again for the client repository, this repo also contains the mobile application
+```
+git clone https://github.com/mpojeda84/connected-driver-client.git
+```
+
+
+If you need to clean up the cluster run the following script to start over: 
+If you would like this script to delete the firebase database use a text editor and paste in the link to your firebase database in the curl command
+```
+./1-delete.sh
+```
 
 
 
@@ -70,12 +77,17 @@ You can choose to run commands from the cluster or set up an edge node installed
 
 ```
 yum install maven
-git clone https://github.com/mpojeda84/connected-driver-cluster.git
-cd consumer/ingestor
-mvn clean package
+cd connected-driver-cluster/consumers/ingestor
+mvn package
 cd ../transformer
-mvn clean package
+mvn package
+cd connected-driver-client/producer/
+mvn package 
 ```
+
+
+
+
 
 **Google Firebase**
 
@@ -115,13 +127,13 @@ npm install -g expo-cli
 ```
 
 
-On your personal computer or where you will be simulating the mobile application 
+On your personal computer or where you will be simulating the mobile application. This is where you will paste your var config information you copied from the Firebase console:  
 ```
 git clone https://github.com/mpojeda84/connected-car-client.git
 cd firebase/
 #install required node.js libraries
 npm i
-vi Firebase.js > paste in credentials 
+vi lib/Firebase.js > paste in credentials 
 ```
 
 We are now ready to start up our mobile application 
