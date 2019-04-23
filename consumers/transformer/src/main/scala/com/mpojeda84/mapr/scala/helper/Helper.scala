@@ -42,10 +42,10 @@ object Helper {
 
     if(date.contains(" ")) {
       //val today = LocalDate.now()
-      val today = LocalDate.parse(DefaultConfiguration.dateOffset.split(" ")(0))
-      val other = LocalDate.parse(date.split(" ")(0))
+      val today = LocalDate.parse(DefaultConfiguration.dateOffset.split(" ")(0)) // simulating today's date
+      val other = LocalDate.parse(date.split(" ")(0)) /// date from the datapoint
 
-      if (today.minusDays(days).isBefore(other))
+      if (today.minusDays(days).isBefore(other)) // takes only values from datapoints between <days> days ago and today
         value
       else
         "0"

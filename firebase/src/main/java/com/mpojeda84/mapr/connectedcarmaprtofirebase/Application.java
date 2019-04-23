@@ -17,7 +17,9 @@ public class Application {
 
 	public static void main(String[] args) throws ParseException, InterruptedException {
 
+		// reads arguments from terminal
 		CommandLine commandLine = new DefaultParser().parse(Configuration.generateOptions(), args);
+
 		table = commandLine.getOptionValue("t");
 		firebase = commandLine.getOptionValue("f");
 		delay = Integer.parseInt(commandLine.getOptionValue("d"));
@@ -29,9 +31,10 @@ public class Application {
 
 		CarDataService service = new CarDataService();
 
+
 		while(true) {
-            service.sendAllToFirebase();
-            Thread.sleep(delay);
+            service.sendAllToFirebase(); // sends current contents from DB to Firebase
+            Thread.sleep(delay); // delays the execution <delay> milliseconds
         }
 
 	}

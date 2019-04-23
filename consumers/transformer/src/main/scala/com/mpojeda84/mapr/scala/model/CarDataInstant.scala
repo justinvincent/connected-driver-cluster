@@ -1,5 +1,6 @@
 package com.mpojeda84.mapr.scala.model
 
+// data transfer object (schema)
 case class CarDataInstant(
                            producerId: String,
 

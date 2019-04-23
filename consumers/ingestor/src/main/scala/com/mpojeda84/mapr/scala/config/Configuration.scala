@@ -1,7 +1,9 @@
 package com.mpojeda84.mapr.scala.config
 
+// case class to define parameters from the terminal
 case class Configuration(tableName: String, topic: String)
 
+// Utility to parse from the terminal
 object Configuration {
 
   def parse(args: Seq[String]): Configuration = parser.parse(args, Configuration.default).get

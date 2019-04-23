@@ -14,38 +14,47 @@ object Application {
 
   def main (args: Array[String]): Unit = {
 
+    // capture parameters from terminal into the Configuration object
     val argsConfiguration = Configuration.parse(args)
 
+    // creates spark config
     val config = new SparkConf().setAppName("Car data raw ingestion")
 
+    // creates spark context
     val sc = new SparkContext(config)
+
+    // creates streamming context
     implicit val ssc: StreamingContext = new StreamingContext(sc, Milliseconds(500))
 
     println("### RUNNING ###")
-    println(argsConfiguration.tableName)
-    println(argsConfiguration.topic)
+    println("Table Name: " + argsConfiguration.tableName)
+    println("Topic Name" + argsConfiguration.topic)
 
+    // create direct stream
     val consumerStrategy = ConsumerStrategies.Subscribe[String, String](List(argsConfiguration.topic), kafkaParameters)
     val directStream = KafkaUtils.createDirectStream(ssc, LocationStrategies.PreferConsistent, consumerStrategy)
 
-    directStream.map(_.value())
-      .map(toJsonWithId)
+    directStream
+      .map(_.value()) // extract the value from the consumer record, the result is the csv string data point
+      .map(toJsonWithId) // calls toJsonWithId that convcerts the csv line into json format, and adds the _id attribute
       .foreachRDD { rdd =>
+        // saves each RDD (set of elements) into MapR-DB
         rdd.saveToMapRDB(argsConfiguration.tableName)
       }
 
-    ssc.start()
-    ssc.awaitTermination()
+    ssc.start() // start reading from the stream
+    ssc.awaitTermination()  // puts application on hold while the stream is read
 
   }
 
   private def kafkaParameters = Map(
-    ConsumerConfig.GROUP_ID_CONFIG -> ("connected-car" + DateTime.now().toString),
+    ConsumerConfig.GROUP_ID_CONFIG -> ("connected-car" + DateTime.now().toString), // only because we want it to read from the beginning each time for demo purposes
     ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG -> "org.apache.kafka.common.serialization.StringDeserializer",
     ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG -> "org.apache.kafka.common.serialization.StringDeserializer",
     ConsumerConfig.ENABLE_AUTO_COMMIT_CONFIG -> "true",
-    ConsumerConfig.AUTO_OFFSET_RESET_CONFIG -> "earliest"
+    ConsumerConfig.AUTO_OFFSET_RESET_CONFIG -> "earliest" // starts from the beginning
   )
+
 
   private def toJsonWithId(csvLine: String): CarDataInstant = {
     val values = csvLine.split(",").map(_.trim)

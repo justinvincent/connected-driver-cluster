@@ -9,10 +9,10 @@ object Configuration {
   def default: Configuration = DefaultConfiguration
 
   object DefaultConfiguration extends Configuration(
-    "path/to/json",
-    "/path/to/stream:topic",
-    "/obd/car-data-transformed",
-    "2019-02-13 0:55:08"
+    "path/to/json", // to achieve exactly-once semantic (each element in the stream is read one time exactly)
+    "/path/to/stream:topic", // topic to read from
+    "/obd/car-data-transformed", // table to write to
+    "2019-02-13 0:55:08" // fix the date for the demo rather than reading from the system date
   )
 
   private val parser = new scopt.OptionParser[Configuration]("App Name") {

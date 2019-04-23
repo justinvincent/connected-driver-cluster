@@ -27,7 +27,9 @@ public class CarDataHelper {
         carData.setOdometer(node.get("odometer").asText());
         carData.setTotalFuelEconomy(node.get("totalFuelEconomy").asText());
         carData.setBestFuelEconomy(node.get("bestFuelEconomy").asText());
+        // maxOdometerToday minus minOdometerToday
         carData.setMilesToday(difference(node.get("maxOdometerToday").asText(), node.get("minOdometerToday").asText()));
+        // maxOdometerThisWeek minus minOdometerThisWeek
         carData.setMilesThisWeek(difference(node.get("maxOdometerThisWeek").asText(), node.get("minOdometerThisWeek").asText()));
         carData.setHighestSpeedToday(node.get("maxSpeedToday").asText());
         carData.setHighestSpeedThisWeek(node.get("maxSpeedLast7Days").asText());
@@ -37,6 +39,7 @@ public class CarDataHelper {
         return carData;
     }
 
+    // corrections on the data
     static CarDataDto normalizeAndFormat(CarDataDto carData) {
 
         carData.setOdometer(toInt(carData.getOdometer()));
@@ -70,6 +73,7 @@ public class CarDataHelper {
         catch (Exception e) {System.out.println("could not convert to Double:" + value);return  value;}
     }
 
+    // correction factor for the data, economy numbers are too high
     private static String prepareFuelEconomy(String fuelEconomy) {
         try{return toInt(Double.toString (Double.parseDouble(fuelEconomy) / 35));}
         catch (Exception e) {System.out.println("could not convert to Double:" + fuelEconomy);return  fuelEconomy;}

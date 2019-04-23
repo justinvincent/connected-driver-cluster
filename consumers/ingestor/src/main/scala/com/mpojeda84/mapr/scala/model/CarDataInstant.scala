@@ -1,5 +1,7 @@
 package com.mpojeda84.mapr.scala.model
 
+// data transfer object
+
 case class CarDataInstant(
                            _id: String,
 
