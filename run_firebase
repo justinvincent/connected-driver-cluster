@@ -1,0 +1,1 @@
+java -jar /mapr/my.cluster.com/user/mapr/connected-driver-cluster/firebase/target/connected-driver-firebase-2.0-SNAPSHOT.jar -t /mapr/my.cluster.com/obd/obd_transformed -f https://mapr-connected-driver.firebaseio.com -d 200 -m /obd/obd_messages

@@ -1,0 +1,1 @@
+/opt/mapr/spark/spark-2.3.2/bin/spark-submit --master yarn --deploy-mode client --num-executors 2 --executor-memory 1g /mapr/my.cluster.com/user/mapr/connected-driver-cluster/consumers/ingestor/target/connected-driver-ingestor-2.0-SNAPSHOT.jar -n "/mapr/my.cluster.com/obd/obd_msg_stream:obd_msg" -t "/mapr/my.cluster.com/obd/obd_raw_table"
