@@ -1,0 +1,49 @@
+Traceback (most recent call last):
+  File "/home/mapr/.pyenv/versions/3.6.4/lib/python3.6/genericpath.py", line 19, in exists
+    os.stat(path)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/mapr/.local/lib/python3.6/site-packages/MarkupSafe-1.1.1.dist-info/namespace_packages.txt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mapr/.local/bin/jupyter-notebook", line 7, in <module>
+    from notebook.notebookapp import main
+  File "/home/mapr/.local/lib/python3.6/site-packages/notebook/notebookapp.py", line 83, in <module>
+    from .services.contents.manager import ContentsManager
+  File "/home/mapr/.local/lib/python3.6/site-packages/notebook/services/contents/manager.py", line 17, in <module>
+    from nbformat import sign, validate as validate_nb, ValidationError
+  File "/home/mapr/.local/lib/python3.6/site-packages/nbformat/__init__.py", line 33, in <module>
+    from .validator import validate, ValidationError
+  File "/home/mapr/.local/lib/python3.6/site-packages/nbformat/validator.py", line 12, in <module>
+    from jsonschema import ValidationError
+  File "/home/mapr/.local/lib/python3.6/site-packages/jsonschema/__init__.py", line 32, in <module>
+    from pkg_resources import get_distribution
+  File "/home/mapr/.pyenv/versions/3.6.4/lib/python3.6/site-packages/pkg_resources/__init__.py", line 3017, in <module>
+    @_call_aside
+  File "/home/mapr/.pyenv/versions/3.6.4/lib/python3.6/site-packages/pkg_resources/__init__.py", line 3003, in _call_aside
+    f(*args, **kwargs)
+  File "/home/mapr/.pyenv/versions/3.6.4/lib/python3.6/site-packages/pkg_resources/__init__.py", line 3045, in _initialize_master_working_set
+    dist.activate(replace=False)
+  File "/home/mapr/.pyenv/versions/3.6.4/lib/python3.6/site-packages/pkg_resources/__init__.py", line 2575, in activate
+    for pkg in self._get_metadata('namespace_packages.txt'):
+  File "/home/mapr/.pyenv/versions/3.6.4/lib/python3.6/site-packages/pkg_resources/__init__.py", line 2564, in _get_metadata
+    if self.has_metadata(name):
+  File "/home/mapr/.pyenv/versions/3.6.4/lib/python3.6/site-packages/pkg_resources/__init__.py", line 1462, in has_metadata
+    return self.egg_info and self._has(self._fn(self.egg_info, name))
+  File "/home/mapr/.pyenv/versions/3.6.4/lib/python3.6/site-packages/pkg_resources/__init__.py", line 1564, in _has
+    return os.path.exists(path)
+  File "/home/mapr/.pyenv/versions/3.6.4/lib/python3.6/genericpath.py", line 19, in exists
+    os.stat(path)
+KeyboardInterrupt
+[I 23:17:02.178 NotebookApp] The port 8888 is already in use, trying another port.
+[I 23:17:02.188 NotebookApp] Serving notebooks from local directory: /mapr/my.cluster.com/user/mapr/connected-driver-cluster/ml
+[I 23:17:02.188 NotebookApp] The Jupyter Notebook is running at:
+[I 23:17:02.188 NotebookApp] http://10.20.30.171:8889/?token=a1ba6b769dcfde70761a7add073d06b6c3650778d1216ec9
+[I 23:17:02.188 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 23:17:02.195 NotebookApp] No web browser found: could not locate runnable browser.
+[C 23:17:02.196 NotebookApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///run/user/5000/jupyter/nbserver-15234-open.html
+    Or copy and paste one of these URLs:
+        http://10.20.30.171:8889/?token=a1ba6b769dcfde70761a7add073d06b6c3650778d1216ec9

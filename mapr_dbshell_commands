@@ -1,0 +1,3 @@
+mapr dbshell
+insert /obd/obd_messages --value '{"_id":"001","vin":"2HMDJJFB2JJ000017", "date":"2-13-2019","message":"Engine Status: HEALTHY", "severity":"0"}'
+
