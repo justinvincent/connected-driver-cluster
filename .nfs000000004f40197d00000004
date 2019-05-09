@@ -1,0 +1,24 @@
+[I 22:10:43.758 NotebookApp] Serving notebooks from local directory: /mapr/my.cluster.com/user/mapr/connected-driver-cluster
+[I 22:10:43.760 NotebookApp] The Jupyter Notebook is running at:
+[I 22:10:43.761 NotebookApp] http://10.20.30.171:8888/?token=a4fe5ef51ff13919eff3b1b4b740d9e0e55e138624b9debf
+[I 22:10:43.761 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 22:10:43.768 NotebookApp] No web browser found: could not locate runnable browser.
+[C 22:10:43.768 NotebookApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///run/user/5000/jupyter/nbserver-15109-open.html
+    Or copy and paste one of these URLs:
+        http://10.20.30.171:8888/?token=a4fe5ef51ff13919eff3b1b4b740d9e0e55e138624b9debf
+[I 22:11:04.110 NotebookApp] 302 GET /?token=a4fe5ef51ff13919eff3b1b4b740d9e0e55e138624b9debf (172.30.12.146) 2.16ms
+[I 22:11:30.132 NotebookApp] Creating new notebook in 
+[W 22:11:33.063 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20190507221041 (172.30.12.146) 26.74ms referer=http://10.20.30.171:8888/notebooks/Untitled.ipynb?kernel_name=pyspark
+[I 22:11:33.196 NotebookApp] Kernel started: 499ee67d-fe4b-4a5b-8949-f4f178b3062c
+19/05/07 22:11:41 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+19/05/07 22:11:44 ERROR CLDBRpcCommonUtils: CLDB Ips: 10.20.30.160-, Port: 7222 is READ_ONLY CLDB. Trying another one
+19/05/07 22:11:44 ERROR CLDBRpcCommonUtils: CLDB Ips: 10.20.30.165-, Port: 7222 is READ_ONLY CLDB. Trying another one
+[I 22:11:47.821 NotebookApp] Adapting to protocol v5.1 for kernel 499ee67d-fe4b-4a5b-8949-f4f178b3062c
+[I 22:13:33.187 NotebookApp] Saving file at /Untitled.ipynb
+[I 22:35:32.587 NotebookApp] Starting buffering for 499ee67d-fe4b-4a5b-8949-f4f178b3062c:067dd189ef5d4e208e6e934998c3b9a6
+[I 23:10:59.022 NotebookApp] Adapting to protocol v5.1 for kernel 499ee67d-fe4b-4a5b-8949-f4f178b3062c
+[I 23:10:59.043 NotebookApp] Restoring connection for 499ee67d-fe4b-4a5b-8949-f4f178b3062c:067dd189ef5d4e208e6e934998c3b9a6
+[I 23:11:43.723 NotebookApp] Starting buffering for 499ee67d-fe4b-4a5b-8949-f4f178b3062c:067dd189ef5d4e208e6e934998c3b9a6

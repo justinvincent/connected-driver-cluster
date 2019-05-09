@@ -1,0 +1,164 @@
+[I 08:38:02.366 NotebookApp] The port 8888 is already in use, trying another port.
+[I 08:38:02.369 NotebookApp] The port 8889 is already in use, trying another port.
+[I 08:38:02.369 NotebookApp] The port 8890 is already in use, trying another port.
+[I 08:38:02.379 NotebookApp] Serving notebooks from local directory: /mapr/my.cluster.com/user/mapr/connected-driver-cluster/ml
+[I 08:38:02.379 NotebookApp] The Jupyter Notebook is running at:
+[I 08:38:02.379 NotebookApp] http://10.20.30.171:8891/?token=e5fd7fcb1b103e9635e360612227b71825105a7fbc02403c
+[I 08:38:02.380 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 08:38:02.387 NotebookApp] No web browser found: could not locate runnable browser.
+[C 08:38:02.388 NotebookApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///run/user/5000/jupyter/nbserver-26490-open.html
+    Or copy and paste one of these URLs:
+        http://10.20.30.171:8891/?token=e5fd7fcb1b103e9635e360612227b71825105a7fbc02403c
+[I 08:38:24.354 NotebookApp] 302 GET /?token=e5fd7fcb1b103e9635e360612227b71825105a7fbc02403c (172.30.12.146) 2.36ms
+[W 08:38:33.354 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20190508083759 (172.30.12.146) 29.00ms referer=http://10.20.30.171:8891/notebooks/connectedDriverPySparkML.ipynb
+[I 08:38:34.267 NotebookApp] Kernel started: 4ab20b0f-5cbd-4a28-8132-3910104264d9
+19/05/08 08:38:43 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+19/05/08 08:38:45 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+19/05/08 08:38:45 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+19/05/08 08:38:46 ERROR CLDBRpcCommonUtils: CLDB Ips: 10.20.30.160-, Port: 7222 is READ_ONLY CLDB. Trying another one
+19/05/08 08:38:46 ERROR CLDBRpcCommonUtils: CLDB Ips: 10.20.30.165-, Port: 7222 is READ_ONLY CLDB. Trying another one
+[I 08:38:47.845 NotebookApp] Adapting to protocol v5.1 for kernel 4ab20b0f-5cbd-4a28-8132-3910104264d9
+[I 08:48:34.411 NotebookApp] Saving file at /connectedDriverPySparkML.ipynb
+[I 08:50:34.313 NotebookApp] Saving file at /connectedDriverPySparkML.ipynb
+[I 08:52:34.307 NotebookApp] Saving file at /connectedDriverPySparkML.ipynb
+[I 08:56:34.307 NotebookApp] Saving file at /connectedDriverPySparkML.ipynb
+[I 09:06:34.431 NotebookApp] Saving file at /connectedDriverPySparkML.ipynb
+[I 09:08:34.318 NotebookApp] Saving file at /connectedDriverPySparkML.ipynb
+[I 09:10:34.317 NotebookApp] Saving file at /connectedDriverPySparkML.ipynb
+[I 09:11:27.927 NotebookApp] Saving file at /connectedDriverPySparkML.ipynb
+[I 09:22:34.482 NotebookApp] Saving file at /connectedDriverPySparkML.ipynb
+[I 09:35:32.076 NotebookApp] Starting buffering for 4ab20b0f-5cbd-4a28-8132-3910104264d9:10da87fc63474fb08aeafaf65e4fc59e
+[I 09:45:37.229 NotebookApp] Adapting to protocol v5.1 for kernel 4ab20b0f-5cbd-4a28-8132-3910104264d9
+[I 09:45:37.235 NotebookApp] Restoring connection for 4ab20b0f-5cbd-4a28-8132-3910104264d9:10da87fc63474fb08aeafaf65e4fc59e
+[I 09:52:24.918 NotebookApp] Saving file at /connectedDriverPySparkML.ipynb
+[I 10:11:21.932 NotebookApp] Starting buffering for 4ab20b0f-5cbd-4a28-8132-3910104264d9:10da87fc63474fb08aeafaf65e4fc59e
+[I 10:49:35.066 NotebookApp] Adapting to protocol v5.1 for kernel 4ab20b0f-5cbd-4a28-8132-3910104264d9
+[I 10:49:35.084 NotebookApp] Restoring connection for 4ab20b0f-5cbd-4a28-8132-3910104264d9:10da87fc63474fb08aeafaf65e4fc59e
+[I 10:50:54.539 NotebookApp] Starting buffering for 4ab20b0f-5cbd-4a28-8132-3910104264d9:10da87fc63474fb08aeafaf65e4fc59e
+[I 11:10:39.954 NotebookApp] Adapting to protocol v5.1 for kernel 4ab20b0f-5cbd-4a28-8132-3910104264d9
+[I 11:10:39.958 NotebookApp] Restoring connection for 4ab20b0f-5cbd-4a28-8132-3910104264d9:10da87fc63474fb08aeafaf65e4fc59e
+[I 11:11:24.908 NotebookApp] Starting buffering for 4ab20b0f-5cbd-4a28-8132-3910104264d9:10da87fc63474fb08aeafaf65e4fc59e
+[I 11:25:20.403 NotebookApp] Adapting to protocol v5.1 for kernel 4ab20b0f-5cbd-4a28-8132-3910104264d9
+[I 11:25:20.408 NotebookApp] Restoring connection for 4ab20b0f-5cbd-4a28-8132-3910104264d9:10da87fc63474fb08aeafaf65e4fc59e
+[I 12:11:51.576 NotebookApp] Saving file at /connectedDriverPySparkML.ipynb
+ANTLR Tool version 4.5 used for code generation does not match the current runtime version 4.7ANTLR Runtime version 4.5 used for parser compilation does not match the current runtime version 4.7ANTLR Tool version 4.5 used for code generation does not match the current runtime version 4.7ANTLR Runtime version 4.5 used for parser compilation does not match the current runtime version 4.7[Stage 0:>                                                          (0 + 1) / 1]                                                                                [Stage 1:>                                                          (0 + 1) / 1]                                                                                [Stage 3:>                                                          (0 + 1) / 1][Stage 4:=====================>                                  (78 + 8) / 200][Stage 4:===============================>                      (117 + 10) / 200][Stage 4:=============================================>        (169 + 15) / 200]                                                                                [Stage 5:>                                                          (0 + 1) / 1][Stage 6:====================================>                 (136 + 11) / 200]                                                                                [Stage 8:>                                                          (0 + 1) / 1]                                                                                [Stage 10:>                                                         (0 + 1) / 1][Stage 11:=====================================>                (138 + 8) / 200][Stage 11:==============================================>       (173 + 8) / 200]                                                                                [Stage 14:>                                                         (0 + 1) / 1]                                                                                [Stage 18:>                 (0 + 1) / 1][Stage 20:>                 (0 + 1) / 1][Stage 20:>                                                         (0 + 1) / 1][Stage 21:==================================================>   (186 + 9) / 200]                                                                                [Stage 23:>                 (0 + 1) / 1][Stage 24:>                 (0 + 1) / 1][Stage 23:>                                                         (0 + 1) / 1]                                                                                [Stage 29:>                 (0 + 1) / 1][Stage 30:>                 (0 + 1) / 1][Stage 29:>                                                         (0 + 1) / 1][Stage 32:==============================================>       (173 + 9) / 200]                                                                                [Stage 35:>                 (0 + 1) / 1][Stage 37:>                 (0 + 1) / 1][Stage 35:>                                                         (0 + 1) / 1][Stage 38:========================================>             (151 + 0) / 200][Stage 38:==========================================>           (157 + 8) / 200]                                                                                [Stage 55:>                 (0 + 1) / 1][Stage 56:>                 (0 + 1) / 1][Stage 55:>                                                         (0 + 1) / 1]                                                                                [Stage 61:>                 (0 + 1) / 1][Stage 62:>                 (0 + 1) / 1][Stage 61:>                                                         (0 + 1) / 1][Stage 65:=================================================>    (182 + 8) / 200]                                                                                [Stage 128:>                (0 + 1) / 1][Stage 129:>                (0 + 1) / 1][Stage 129:>                                                        (0 + 1) / 1]                                                                                [Stage 134:>                (0 + 1) / 1][Stage 136:>                (0 + 1) / 1][I 12:32:20.712 NotebookApp] Saving file at /connectedDriverPySparkML.ipynb
+[Stage 134:>                                                        (0 + 1) / 1][Stage 137:===============================================>     (178 + 0) / 200]                                                                                [Stage 159:>                (0 + 1) / 1][Stage 160:>                (0 + 1) / 1][Stage 160:>                                                        (0 + 1) / 1]                                                                                [Stage 166:>                                                        (0 + 1) / 1][Stage 165:>                (0 + 1) / 1][Stage 166:>                (0 + 1) / 1][Stage 165:>                                                        (0 + 1) / 1][Stage 169:====================================================>(199 + 1) / 200]                                                                                19/05/08 12:32:31 WARN DecisionTreeMetadata: DecisionTree reducing maxBins from 32 to 8 (= number of training instances)
+[Stage 267:=======>                                              (26 + 8) / 200][Stage 267:==========>                                           (40 + 8) / 200][Stage 267:==============>                                       (55 + 9) / 200][Stage 267:====================>                                 (75 + 8) / 200][Stage 267:========================>                             (91 + 8) / 200][Stage 267:==============================>                      (114 + 8) / 200][Stage 267:===================================>                 (135 + 8) / 200][Stage 267:=========================================>           (158 + 8) / 200][Stage 267:===============================================>     (180 + 8) / 200][Stage 268:======>                                               (23 + 8) / 200][Stage 268:=========>                                            (36 + 8) / 200][Stage 268:=============>                                        (51 + 9) / 200][Stage 268:==================>                                   (67 + 8) / 200][Stage 268:=====================>                                (78 + 8) / 200][Stage 268:==========================>                           (97 + 8) / 200][Stage 268:=============================>                       (113 + 8) / 200][Stage 268:==================================>                  (130 + 8) / 200][Stage 268:======================================>              (144 + 9) / 200][Stage 268:==========================================>          (162 + 8) / 200][Stage 268:===============================================>     (178 + 8) / 200][Stage 268:==================================================>  (192 + 8) / 200]                                                                                19/05/08 12:32:38 WARN LogisticRegression: All labels are the same value and fitIntercept=true, so the coefficients will be zeros. Training is not needed.
+19/05/08 12:32:40 WARN BLAS: Failed to load implementation from: com.github.fommil.netlib.NativeSystemBLAS
+19/05/08 12:32:40 WARN BLAS: Failed to load implementation from: com.github.fommil.netlib.NativeRefBLAS
+[Stage 349:===============================================>    (181 + 13) / 200]                                                                                [Stage 350:>                                                        (0 + 8) / 8]                                                                                [Stage 381:==========>                                           (40 + 8) / 200]19/05/08 12:32:46 ERROR Executor: Exception in task 21.0 in stage 381.0 (TID 11856)
+org.apache.spark.api.python.PythonException: Traceback (most recent call last):
+  File "/opt/mapr/spark/spark-2.3.2/python/lib/pyspark.zip/pyspark/worker.py", line 253, in main
+    process()
+  File "/opt/mapr/spark/spark-2.3.2/python/lib/pyspark.zip/pyspark/worker.py", line 248, in process
+    serializer.dump_stream(func(split_index, iterator), outfile)
+  File "/opt/mapr/spark/spark-2.3.2/python/lib/pyspark.zip/pyspark/serializers.py", line 331, in dump_stream
+    self.serializer.dump_stream(self._batched(iterator), stream)
+  File "/opt/mapr/spark/spark-2.3.2/python/lib/pyspark.zip/pyspark/serializers.py", line 140, in dump_stream
+    for obj in iterator:
+  File "/opt/mapr/spark/spark-2.3.2/python/lib/pyspark.zip/pyspark/serializers.py", line 320, in _batched
+    for item in iterator:
+  File "<string>", line 1, in <lambda>
+  File "/opt/mapr/spark/spark-2.3.2/python/lib/pyspark.zip/pyspark/worker.py", line 76, in <lambda>
+    return lambda *a: f(*a)
+  File "/opt/mapr/spark/spark-2.3.2/python/lib/pyspark.zip/pyspark/util.py", line 55, in wrapper
+    return f(*args, **kwargs)
+  File "<ipython-input-29-ce46089f77a3>", line 5, in <lambda>
+  File "/opt/mapr/spark/spark-2.3.2/python/lib/pyspark.zip/pyspark/ml/linalg/__init__.py", line 399, in __getitem__
+    return self.array[item]
+IndexError: index 1 is out of bounds for axis 0 with size 1
+
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.handlePythonException(PythonRunner.scala:330)
+	at org.apache.spark.sql.execution.python.PythonUDFRunner$$anon$1.read(PythonUDFRunner.scala:83)
+	at org.apache.spark.sql.execution.python.PythonUDFRunner$$anon$1.read(PythonUDFRunner.scala:66)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:284)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$$anon$12.hasNext(Iterator.scala:439)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:408)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:408)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anonfun$10$$anon$1.hasNext(WholeStageCodegenExec.scala:614)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:408)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:408)
+	at org.apache.spark.util.random.SamplingUtils$.reservoirSampleAndCount(SamplingUtils.scala:41)
+	at org.apache.spark.RangePartitioner$$anonfun$13.apply(Partitioner.scala:306)
+	at org.apache.spark.RangePartitioner$$anonfun$13.apply(Partitioner.scala:304)
+	at org.apache.spark.rdd.RDD$$anonfun$mapPartitionsWithIndex$1$$anonfun$apply$26.apply(RDD.scala:853)
+	at org.apache.spark.rdd.RDD$$anonfun$mapPartitionsWithIndex$1$$anonfun$apply$26.apply(RDD.scala:853)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:49)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:324)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:288)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:87)
+	at org.apache.spark.scheduler.Task.run(Task.scala:109)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:345)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+19/05/08 12:32:46 WARN TaskSetManager: Lost task 21.0 in stage 381.0 (TID 11856, localhost, executor driver): org.apache.spark.api.python.PythonException: Traceback (most recent call last):
+  File "/opt/mapr/spark/spark-2.3.2/python/lib/pyspark.zip/pyspark/worker.py", line 253, in main
+    process()
+  File "/opt/mapr/spark/spark-2.3.2/python/lib/pyspark.zip/pyspark/worker.py", line 248, in process
+    serializer.dump_stream(func(split_index, iterator), outfile)
+  File "/opt/mapr/spark/spark-2.3.2/python/lib/pyspark.zip/pyspark/serializers.py", line 331, in dump_stream
+    self.serializer.dump_stream(self._batched(iterator), stream)
+  File "/opt/mapr/spark/spark-2.3.2/python/lib/pyspark.zip/pyspark/serializers.py", line 140, in dump_stream
+    for obj in iterator:
+  File "/opt/mapr/spark/spark-2.3.2/python/lib/pyspark.zip/pyspark/serializers.py", line 320, in _batched
+    for item in iterator:
+  File "<string>", line 1, in <lambda>
+  File "/opt/mapr/spark/spark-2.3.2/python/lib/pyspark.zip/pyspark/worker.py", line 76, in <lambda>
+    return lambda *a: f(*a)
+  File "/opt/mapr/spark/spark-2.3.2/python/lib/pyspark.zip/pyspark/util.py", line 55, in wrapper
+    return f(*args, **kwargs)
+  File "<ipython-input-29-ce46089f77a3>", line 5, in <lambda>
+  File "/opt/mapr/spark/spark-2.3.2/python/lib/pyspark.zip/pyspark/ml/linalg/__init__.py", line 399, in __getitem__
+    return self.array[item]
+IndexError: index 1 is out of bounds for axis 0 with size 1
+
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.handlePythonException(PythonRunner.scala:330)
+	at org.apache.spark.sql.execution.python.PythonUDFRunner$$anon$1.read(PythonUDFRunner.scala:83)
+	at org.apache.spark.sql.execution.python.PythonUDFRunner$$anon$1.read(PythonUDFRunner.scala:66)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:284)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$$anon$12.hasNext(Iterator.scala:439)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:408)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:408)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anonfun$10$$anon$1.hasNext(WholeStageCodegenExec.scala:614)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:408)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:408)
+	at org.apache.spark.util.random.SamplingUtils$.reservoirSampleAndCount(SamplingUtils.scala:41)
+	at org.apache.spark.RangePartitioner$$anonfun$13.apply(Partitioner.scala:306)
+	at org.apache.spark.RangePartitioner$$anonfun$13.apply(Partitioner.scala:304)
+	at org.apache.spark.rdd.RDD$$anonfun$mapPartitionsWithIndex$1$$anonfun$apply$26.apply(RDD.scala:853)
+	at org.apache.spark.rdd.RDD$$anonfun$mapPartitionsWithIndex$1$$anonfun$apply$26.apply(RDD.scala:853)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:49)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:324)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:288)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:87)
+	at org.apache.spark.scheduler.Task.run(Task.scala:109)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:345)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+19/05/08 12:32:46 ERROR TaskSetManager: Task 21 in stage 381.0 failed 1 times; aborting job
+19/05/08 12:32:46 WARN TaskSetManager: Lost task 54.0 in stage 381.0 (TID 11889, localhost, executor driver): TaskKilled (Stage cancelled)
+19/05/08 12:32:46 WARN TaskSetManager: Lost task 56.0 in stage 381.0 (TID 11891, localhost, executor driver): TaskKilled (Stage cancelled)
+19/05/08 12:32:46 WARN TaskSetManager: Lost task 55.0 in stage 381.0 (TID 11890, localhost, executor driver): TaskKilled (Stage cancelled)
+19/05/08 12:32:46 WARN TaskSetManager: Lost task 57.0 in stage 381.0 (TID 11892, localhost, executor driver): TaskKilled (Stage cancelled)
+19/05/08 12:32:46 WARN TaskSetManager: Lost task 38.0 in stage 381.0 (TID 11873, localhost, executor driver): TaskKilled (Stage cancelled)
+[I 12:34:20.745 NotebookApp] Saving file at /connectedDriverPySparkML.ipynb
+[I 12:44:19.737 NotebookApp] Saving file at /connectedDriverPySparkML.ipynb
+[I 13:04:21.569 NotebookApp] Saving file at /connectedDriverPySparkML.ipynb
+2019-05-08 13:04:04,5730 ERROR Cidcache fc/cidcache.cc:1039 Thread: 27564 ContainerLookup failed, No such file or directory(2), cid 2342 not found at CLDB: 10.20.30.167:7222
+2019-05-08 13:04:04,5730 ERROR Cidcache fc/cidcache.cc:1258 Thread: 27564 GetBinding failed, could not allocate entry for cid 2342, in cidcache
+2019-05-08 13:04:04,5730 ERROR Client fc/client.cc:3959 Thread: 27564 Rpc failed, 28.21, no server found for cid 2342fid 2342.16.2
+                                                                                [Stage 383:>                                                        (0 + 1) / 1]                                                                                [Stage 385:>                                                        (0 + 1) / 1]                                                                                [Stage 387:>                                                        (0 + 1) / 1]                                                                                [Stage 390:>                                                        (0 + 1) / 1]                                                                                [Stage 392:>                                                        (0 + 1) / 1]                                                                                [Stage 396:>                                                        (0 + 1) / 1]                                                                                [Stage 400:>                (0 + 1) / 1][Stage 402:>                (0 + 1) / 1][Stage 402:>                                                        (0 + 1) / 1][Stage 401:============>(195 + 5) / 200][Stage 402:>                (0 + 1) / 1][Stage 402:>                                                        (0 + 1) / 1]                                                                                [Stage 405:>                (0 + 1) / 1][Stage 406:>                (0 + 1) / 1][Stage 406:>                                                        (0 + 1) / 1][Stage 409:========================================>           (155 + 13) / 200]                                                                                [Stage 412:>                                                        (0 + 1) / 1][Stage 411:>                (0 + 1) / 1][Stage 412:>                (0 + 1) / 1][Stage 412:>                                                        (0 + 1) / 1]                                                                                [Stage 417:>                (0 + 1) / 1][Stage 419:>                (0 + 1) / 1][Stage 417:>                                                        (0 + 1) / 1][Stage 420:==========================================>          (159 + 0) / 200]                                                                                [Stage 437:>                (0 + 1) / 1][Stage 438:>                (0 + 1) / 1][Stage 438:>                                                        (0 + 1) / 1]                                                                                [Stage 443:>                (0 + 1) / 1][Stage 444:>                (0 + 1) / 1][I 13:06:20.786 NotebookApp] Saving file at /connectedDriverPySparkML.ipynb
+[Stage 446:=============================================>       (171 + 8) / 200]                                                                                [Stage 516:>                (0 + 1) / 1][Stage 517:>                (0 + 1) / 1][Stage 517:>                                                        (0 + 1) / 1]                                                                                [Stage 522:>                (0 + 1) / 1][Stage 524:>                (0 + 1) / 1][Stage 522:>                                                        (0 + 1) / 1]                                                                                [Stage 547:>                (0 + 1) / 1][Stage 548:>                (0 + 1) / 1][Stage 547:>                                                        (0 + 1) / 1]                                                                                [Stage 553:>                (0 + 1) / 1][Stage 554:>                (0 + 1) / 1][Stage 553:>                                                        (0 + 1) / 1]                                                                                [Stage 650:===========>                                          (41 + 8) / 200][Stage 650:================>                                     (61 + 8) / 200][Stage 650:======================>                               (83 + 8) / 200][Stage 650:==========================>                           (99 + 8) / 200][Stage 650:==============================>                      (114 + 9) / 200][Stage 650:==================================>                  (132 + 8) / 200][Stage 650:========================================>            (152 + 8) / 200][Stage 650:=============================================>       (171 + 8) / 200][Stage 650:=================================================>   (188 + 8) / 200][Stage 651:=========>                                            (35 + 8) / 200][Stage 651:=============>                                        (50 + 8) / 200][Stage 651:=================>                                    (63 + 8) / 200][Stage 651:====================>                                 (76 + 9) / 200][Stage 651:=======================>                              (87 + 8) / 200][Stage 651:==========================>                           (99 + 8) / 200][Stage 651:=============================>                       (113 + 8) / 200][Stage 651:=================================>                   (127 + 8) / 200][Stage 651:====================================>                (139 + 8) / 200][Stage 651:========================================>            (154 + 9) / 200][Stage 651:============================================>        (167 + 8) / 200][Stage 651:==============================================>      (176 + 8) / 200][Stage 651:==================================================>  (189 + 8) / 200]                                                                                [Stage 656:==================================>                  (131 + 8) / 200][Stage 656:==============================================>      (176 + 9) / 200][Stage 657:============================================>        (168 + 9) / 200][Stage 657:================================================>    (184 + 8) / 200][Stage 657:====================================================>(198 + 2) / 200]                                                                                [Stage 662:==============================>                      (115 + 9) / 200][Stage 662:===========================================>         (163 + 8) / 200][Stage 663:============================================>        (167 + 8) / 200][Stage 663:===============================================>     (181 + 9) / 200][Stage 663:===================================================> (195 + 5) / 200]                                                                                [Stage 837:===============>                                      (56 + 8) / 200][Stage 837:=====================>                                (80 + 8) / 200][Stage 837:========================>                             (91 + 8) / 200][Stage 837:=============================>                       (112 + 8) / 200][Stage 837:===================================>                 (134 + 8) / 200][Stage 837:======================================>              (145 + 8) / 200][Stage 837:===========================================>         (164 + 8) / 200][Stage 837:===============================================>     (180 + 8) / 200]                                                                                [Stage 842:=============>                                        (51 + 8) / 200][Stage 842:==================>                                   (69 + 8) / 200][Stage 842:=======================>                              (86 + 8) / 200][Stage 842:===========================>                         (105 + 8) / 200][Stage 842:================================>                    (121 + 8) / 200][Stage 842:=======================================>             (150 + 8) / 200][Stage 842:===========================================>         (166 + 8) / 200][Stage 842:=================================================>   (188 + 8) / 200]                                                                                [Stage 849:============>                                         (47 + 8) / 200][Stage 849:================>                                     (60 + 8) / 200][Stage 849:=====================>                                (79 + 8) / 200][Stage 849:=========================>                            (96 + 8) / 200][Stage 849:==============================>                      (114 + 9) / 200][Stage 849:===============================>                    (120 + 10) / 200][Stage 849:======================================>              (145 + 8) / 200][Stage 849:==========================================>          (162 + 9) / 200][Stage 849:=================================================>   (188 + 8) / 200]                                                                                [Stage 854:===========================================>        (169 + 12) / 200]                                                                                [I 13:08:21.270 NotebookApp] Saving file at /connectedDriverPySparkML.ipynb
+[I 16:49:31.260 NotebookApp] Starting buffering for 4ab20b0f-5cbd-4a28-8132-3910104264d9:10da87fc63474fb08aeafaf65e4fc59e

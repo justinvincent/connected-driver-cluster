@@ -1,0 +1,1 @@
+/opt/mapr/spark/spark-2.3.2/bin/spark-submit --master yarn --deploy-mode client /mapr/my.cluster.com/user/mapr/connected-driver-cluster/ml/connectedDriverPySparkML.py
